@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <section id="header">
+    <div class="left">
+      <img src="./images/logo.svg">
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="right">
+      <img src="./images/icon-cart.svg">
+      <img src="./images/image-avatar.png" class="profile-img">
+    </div>
+  </section>
+  <section id="product">
+    <div class="image">
+      <img src="./images/image-product-1.jpg" class="main-img">
+      <div class="small-img-grp">
+        <img src="./images/image-product-1-thumbnail.jpg" class="small-img"
+          onclick="clickImg(`./images/image-product-1.jpg`)">
+        <img src="./images/image-product-2-thumbnail.jpg" class="small-img"
+          onclick="clickImg(`./images/image-product-2.jpg`)">
+        <img src="./images/image-product-3-thumbnail.jpg" class="small-img"
+          onclick="clickImg(`./images/image-product-3.jpg`)">
+        <img src="./images/image-product-4-thumbnail.jpg" class="small-img"
+          onclick="clickImg(`./images/image-product-4.jpg`)">
+      </div>
+    </div>
+    <div class="description">
+      <h3 class="company">Sneaker Company</h3>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p class="desc">These low-profile sneakers are your perfect casual wear <br>companion. Featuring a
+        durable rubber outer sole, they’ll <br>withstand everything the weather can offer.
+      </p>
+      <div class="price">
+        <span class="curr-price">$125.00</span>
+        <span class="discount">-50%</span>
+      </div>
+      <p class="original-price">$250.00</p>
+      <div class="add-to-cart">
+        <div class="quantity">
+          <img src="./images/icon-minus.svg" class="minus-button">
+          <span class="number-of-product" style="font-family:Roboto; font-weight:500">0</span>
+          <img src="./images/icon-plus.svg" class="plus-button">
+        </div>
+        <button>Add to cart</button>
+      </div>
+  </section>
+  <section class="preview">
+    <div class="image">
+      <img src="./images/image-product-1.jpg" class="preview-img">
+      <i class="fa-sharp fa-solid fa-xmark close"></i>
+      <div class="small-img-grp">
+        <img src="./images/image-product-1-thumbnail.jpg" class="small-img"
+          onclick="clickPreviewImg(`./images/image-product-1.jpg`)">
+        <img src="./images/image-product-2-thumbnail.jpg" class="small-img"
+          onclick="clickPreviewImg(`./images/image-product-2.jpg`)">
+        <img src="./images/image-product-3-thumbnail.jpg" class="small-img"
+          onclick="clickPreviewImg(`./images/image-product-3.jpg`)">
+        <img src="./images/image-product-4-thumbnail.jpg" class="small-img"
+          onclick="clickPreviewImg(`./images/image-product-4.jpg`)">
+      </div>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>

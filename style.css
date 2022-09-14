@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+section {
+  padding: 2.5rem 7%;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .left {
+  display: flex;
+  gap: 2.5rem;
+}
+
+#header .left ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+#header .left ul li {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: hsl(220, 14%, 75%);
+  cursor: pointer;
+}
+
+#header .right {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  cursor: pointer;
+}
+
+#header .right .profile-img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+}
+
+#product {
+  display: flex;
+}
+
+#product .image {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#product .image .main-img {
+  width: 55%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#product .image .small-img-grp {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#product .image .small-img-grp .small-img {
+  width: 22%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#product .image .small-img-grp .small-img:hover {
+  opacity: 0.3;
+}
+
+#product .description {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#product .description .company {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(26, 100%, 55%);
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+#product .description h1 {
+  font-size: 60px;
+  padding-bottom: 50px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+#product .description .desc {
+  font-size: 19px;
+  padding-bottom: 25px;
+  color: hsl(219, 9%, 45%);
+  font-weight: 500;
+}
+
+#product .description .price {
+  display: flex;
+  align-items: center;
+}
+
+#product .description .curr-price {
+  font-size: 35px;
+  font-weight: 800;
+  padding-right: 20px;
+}
+
+#product .description .discount {
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#product .description .original-price {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(220, 14%, 75%);
+}
+
+#product .description .add-to-cart {
+  display: flex;
+  padding-top: 40px;
+  gap: 2rem;
+}
+
+#product .description .quantity {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 25px;
+  background-color: hsl(233, 21%, 93%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#product .description .quantity img {
+  cursor: pointer;
+}
+
+#product .description button {
+  padding: 15px 80px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(26, 100%, 55%);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.preview {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  display: flex;
+}
+
+.preview .image {
+  position: relative;
+  height: 600px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.preview .image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.preview .image i {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.preview .small-img-grp {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.preview .small-img-grp img {
+  width: 18%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.preview .small-img-grp img:hover {
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0.3;
+}
